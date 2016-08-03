@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "typings install",
-    "build": "webpack --progress --color",
+    "build": "rimraf dist && webpack --progress --color",
     "build-watch": "webpack --watch --progress --color",
-    "build-prod": "webpack --progress --color",
+    "build-prod": "rimraf dist && webpack --progress --color",
     "clean": "rimraf typings node_modules dist"
   },
   "dependencies": {

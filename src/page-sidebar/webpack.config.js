@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png)$/,
-        loader: 'file?name=[path][name].[hash].[ext]'
+        loader: 'file?name=./dist/images/[name].[hash].[ext]'
       }
     ]
   },
