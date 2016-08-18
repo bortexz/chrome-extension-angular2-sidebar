@@ -6,6 +6,13 @@ function createSidebar () {
   iFrame.frameBorder = '0';
   iFrame.style.width = '100%';
   iFrame.style.height = '100%';
+  iFrame.scrolling = 'no';
+  iFrame.onmouseover = function() {
+    document.body.style.overflow='hidden';
+  };
+  iFrame.onmouseout = function() {
+    document.body.style.overflow='auto';
+  };
 
   var newDiv = document.createElement("div");
   newDiv.id = 'domain-tabs-sidebar';
